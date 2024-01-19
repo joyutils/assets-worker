@@ -22,6 +22,24 @@ https://assets.joyutils.org/video/<video_id>/thumbnail
 https://assets.joyutils.org/video/<video_id>/media
 ```
 
+4. Get all assets URLs for a channel ID:
+
+```
+https://assets.joyutils.org/channel/<channel_id>
+```
+
+5. Get a channel avatar:
+
+```
+https://assets.joyutils.org/channel/<channel_id>/avatar
+```
+
+6. Get a channel cover photo:
+
+```
+https://assets.joyutils.org/channel/<channel_id>/cover
+```
+
 ## How it works
 
 Under the hood, whenever a request to the worker is made, it will query Orion at `https://orion.gleev.xyz/graphql` to get a list of active operators for given assets. The worker also resolves user geolocation and provides that to Orion to get URLs sorted by distance.
