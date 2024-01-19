@@ -1,0 +1,17 @@
+{
+  "name": "assets-worker",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240117.0",
+    "itty-router": "^3.0.12",
+		"prettier": "^3.2.4",
+    "typescript": "^5.0.4",
+    "wrangler": "^3.0.0"
+  }
+}
